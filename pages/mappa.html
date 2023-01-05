@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../styles/mappa.css">
+
+  <title>EYE to AI - prompt explorer</title>
+</head>
+
+<body>
+
+  <div id="BoxTesto">
+    <p id="Testo"></p>
+  </div>
+
+  <div class="menu">
+    <div class="sx" id="sx"> </div>
+    <div class="logo" id="logo"><a href="../index.html">
+        <h1 class="title">EYE to AI</h1>
+      </a></div>
+    <div class="dx" id="dx"> </div>
+  </div>
+
+  <div class="menu-tendina" id="menuTendina">
+  <div class="box-filtro" id="box-filtro">
+    <p class="filter-by">filter by</p>
+<div class="casella" id="casella" onclick="apri(this)">- SELECT THE BIAS -<img src="../assets/svg/freccia_nera.svg" class="freccia" id='freccia'></div>
+<div class="resetFiltri" id="resetFiltri">RESET FILTERS</div>
+</div>
+  <div class="filtri" id="filtri">
+    <div class="bias" id="bias"></div>
+  <div class="biasSub" id="biasSub">
+    <p class="p-bias">ethnicity and role of individuals depicted</p>
+    <p class="p-bias">groups of people and what they are doing</p>
+    <p class="p-bias">variety of landscapes and settings</p>
+    <p class="p-bias">solutions to climate change according to AI</p>
+    <p class="p-bias">coherence between figure and background</p>
+    <p class="p-bias">frequence and kinds of generated texts</p>
+    <p class="p-bias">presence of planet earth images</p>
+    <p class="p-bias">generation of random and weird items</p>
+  </div>
+ </div>
+</div>
+<div class="reset" id="reset"><p class="filter-by">scroll to zoom &nbsp | &nbsp pan to move</p></div>
+
+  <div class="workspace">
+    <div class="workspace-content">
+
+
+      <div class="box-categorie">
+        <p class="titoli-categorie">General topic</p>
+        <div class="righe"></div>
+        <div id="general" class="box-prompt">
+          <div class="prompt" id="climate-change" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)">
+            <p class="scritta-prompt">Climate change</p>
+          </div>
+          <div class="prompt" id="climate-crisis" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)">
+            <p class="scritta-prompt">Climate crisis</p>
+          </div>
+          <div class="prompt" id="climate-emergency" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)">
+            <p class="scritta-prompt">Climate emergency</p>
+          </div>
+        </div>
+      </div>
+      <div class="box-categorie">
+        <p class="titoli-categorie">Impacts on people</p>
+        <div class="righe"></div>
+        <div id="impacts" class="box-prompt">
+          <div class="prompt" id="people-affected-by-climate-change" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)">
+            <p class="scritta-prompt">People affected by climate change</p>
+          </div>
+          <div class="prompt" id="people-affected-by-extreme-weather" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)">
+            <p class="scritta-prompt">People affected by extreme weather</p>
+          </div>
+          <div class="prompt" id="people-affected-by-floodings" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)">
+            <p class="scritta-prompt">People affected by floodings</p>
+          </div>
+          <div class="prompt" id="people-affected-by-droughts" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)">
+            <p class="scritta-prompt">People affected by droughts</p>
+          </div>
+          <div class="prompt" id="people-affected-by-smog" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)">
+            <p class="scritta-prompt">People affected by smog</p>
+          </div>
+          <div class="prompt" id="people-affected-by-wildfires" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)">
+            <p class="scritta-prompt">People affected by wildfires</p>
+          </div>
+        </div>
+      </div>
+      <div class="box-categorie">
+        <p class="titoli-categorie">Daily solutions</p>
+        <div class="righe"></div>
+        <div id="solutions" class="box-prompt">
+          <div class="prompt" id="people-engaging-in-sustainability" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"><p class="scritta-prompt">People engaging in sustainability</p></div>
+          <div class="prompt" id="people-recycling-for-sustainability" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"><p class="scritta-prompt">People recycling for sustainability</p></div>
+          <div class="prompt" id="people-zero-emissions" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)">
+            <p class="scritta-prompt">People zero emissions</p></div>
+          <div class="prompt" id="people-using-renewable-energy" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"><p class="scritta-prompt">People using renewable energy</p></div>
+          <div class="prompt" id="people-engaging-in-circular-economy" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"><p class="scritta-prompt">People engaging in circular economy</p></div>
+          <div class="prompt" id="people-living-eco-friendly" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"><p class="scritta-prompt">People living eco friendly</p></div>
+          <div class="prompt" id="climate-change-engineers" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)">
+            <p class="scritta-prompt">Climate change engineers</p> </div>
+          <div class="prompt" id="climate-change-volunteers" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)">
+            <p class="scritta-prompt">Climate change volunteers</p></div>
+          <div class="prompt" id="people-buying-second-hand-for-sustainability" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"><p class="scritta-prompt">People buying second hand for sustainability</p></div>
+          <div class="prompt" id="people-careful-to-zero-waste" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"><p class="scritta-prompt">People careful to zero waste</p></div>
+          <div class="prompt" id="people-daily-zero-waste-choices" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"><p class="scritta-prompt">People daily zero waste choices</p></div>
+          <div class="prompt" id="people-ethics-of-reuse" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)">
+            <p class="scritta-prompt">People ethics of reuse</p></div>
+          <div class="prompt" id="sustainable-projects-for-preventing-climate-change" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"><p class="scritta-prompt">Sustainable projects to prevent climate change</p></div>
+          <div class="prompt" id="climate-change-activists" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)">
+            <p class="scritta-prompt">Climate change activists</p></div>
+          <div class="prompt" id="climate-change-researchers" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"><p class="scritta-prompt">Climate change researchers</p></div>
+        </div>
+      </div>
+      <div class="box-categorie">
+        <p class="titoli-categorie">Worsening issues</p>
+        <div class="righe"></div>
+        <div id="causes" class="box-prompt">
+          <div class="prompt" id="consumerism-affecting-climate-change" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"><p class="scritta-prompt">Consumerism affecting climate change</p></div>
+          <div class="prompt" id="companies-making-greenwashing" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"><p class="scritta-prompt">Companies making greenwashing</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ******************* Utilities ******************* -->
+  <!-- Javascript libraries -->
+  <!-- d3.js -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- jQuery and Popper. They are required by Bootstrap, we discourage using jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+  <!-- Your js file -->
+  <script src="../scripts/mappa.js"></script>
+  <!-- <script src="jquery.js"></script> -->
+  <script src="../scripts/zoom.js"></script>
+
+</body>
+
+</html>

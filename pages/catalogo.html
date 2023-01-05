@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="../styles/catalogo.css">
+
+  <title>EYE to AI - bias catalogue</title>
+</head>
+
+<body>
+
+  <div id="BoxTesto">
+    <p id="Testo"></p>
+  </div>
+
+
+
+  <div class="menu">
+    <div class="sx" id="sx"> </div>
+    <div class="logo" id="logo"><a href="../index.html"><h1 class="title">EYE to AI</h1></a></div>
+    <div class="dx" id="dx"> </div>
+  </div>
+
+  <div class="zoom" id="zoom"> </div>
+
+  <div class="immaginiGif" id="gif1">
+    <img src="../assets/catalogo_imgs/morphing/1.gif" class="gif">
+  </div>
+  <div class="immaginiGif" id="gif2">
+    <img src="../assets/catalogo_imgs/morphing/2.gif" class="gif">
+  </div>
+  <div class="immaginiGif" id="gif3">
+    <img src="../assets/catalogo_imgs/morphing/3.gif" class="gif">
+  </div>
+  <div class="immaginiGif" id="gif4">
+    <img src="../assets/catalogo_imgs/morphing/4.gif" class="gif">
+  </div>
+  <div class="immaginiGif" id="gif5">
+    <img src="../assets/catalogo_imgs/morphing/5.gif" class="gif">
+  </div>
+  <div class="immaginiGif" id="gif6">
+    <img src="../assets/catalogo_imgs/morphing/6.gif" class="gif">
+  </div>
+  <div class="immaginiGif" id="gif7">
+    <img src="../assets/catalogo_imgs/morphing/7.gif" class="gif">
+  </div>
+  <div class="immaginiGif" id="gif8">
+    <img src="../assets/catalogo_imgs/morphing/8.gif" class="gif">
+  </div>
+
+
+
+  <div class="workspace">
+    <div class="workspace-content">
+      <div class="boxBias" id="boxBias1" onclick="ap(this)">
+        <p class="numerinoGrande">(01)</p>
+        <p class="titoli-big" id="titoli-big1" id="titoli-big1" onmouseover="overGif1()" onmouseout="noOverGif1()">It's giving *racism*</p>
+        <p class="titoli-small" id="titoli-small1"><b>Focus:</b>&nbsp ethnicity and role of individuals depicted</p>
+        <div class="box-categorie" id="boxCat1">
+          <p class="numerino"></p>
+          <p class="titoli-categorie">White people  <br>as heroes</p>
+          <div id="hero" class="box-img" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+        </div>
+        <div class="box-categorie" id="boxCat2">
+          <p class="numerino"></p>
+          <p class="titoli-categorie">Other ethnicities <br>as victims</p>
+          <div id="help" class="box-img" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+        </div>
+      </div>
+      <div class="righe"></div>
+      <div class="boxBias" id="boxBias2" onclick="ap(this)">
+        <p class="numerinoGrande">(02)</p>
+        <p class="titoli-big" id="titoli-big2" onmouseover="overGif2()" onmouseout="noOverGif2()">Big green dream team</p>
+        <p class="titoli-small" id="titoli-small2"><b>Focus:</b>&nbsp groups of people and what they are doing </p>
+
+        <div class="box-categorie" id="boxCat3">
+          <p class="numerino"></p>
+          <p class="titoli-categorie">Protests are <br>a must have</p>
+          <div id="Protesting" class="box-img" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+        </div>
+        <div class="box-categorie" id="boxCat4">
+          <p class="numerino"></p>
+          <p class="titoli-categorie">Groups stand <br>doing nothing</p>
+          <div id="Standing" class="box-img" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+        </div>
+        <div class="box-categorie" id="boxCat5">
+          <p class="numerino"></p>
+          <p class="titoli-categorie">People acts <br>as a group</p>
+          <div id="Doing-stuff" class="box-img" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+        </div>
+      </div>
+      <div class="righe"></div>
+      <div class="boxBias" id="boxBias3" onclick="ap(this)">
+        <p class="numerinoGrande">(03)</p>
+        <p class="titoli-big" id="titoli-big3" onmouseover="overGif3()" onmouseout="noOverGif3()">Landscape déjà vu</p>
+        <p class="titoli-small" id="titoli-small3"><b>Focus:</b>&nbsp variety of landscapes and settings</p>
+
+        <div class="box-categorie" id="boxCat6">
+          <p class="numerino"></p>
+          <p class="titoli-categorie">Over repetition <br>of deserts</p>
+          <div id="wilderness" class="box-img" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+        </div>
+        <div class="box-categorie" id="boxCat7">
+          <p class="numerino"></p>
+          <p class="titoli-categorie">Green<br>everywhere</p>
+          <div id="Green" class="box-img" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+        </div>
+        <div class="box-categorie" id="boxCat8">
+          <p class="numerino"></p>
+          <p class="titoli-categorie">Surreal <br>landscapes</p>
+          <div id="Daydreaming" class="box-img" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+        </div>
+      </div>
+      <div class="righe"></div>
+      <div class="boxBias" id="boxBias4" onclick="ap(this)">
+        <p class="numerinoGrande">(04)</p>
+        <p class="titoli-big" id="titoli-big4" onmouseover="overGif4()" onmouseout="noOverGif4()">Greenwashed solutions</p>
+        <p class="titoli-small" id="titoli-small4"><b>Focus:</b>&nbsp solutions to climate change according to AI<br></p>
+
+        <div class="box-categorie" id="boxCat9">
+          <p class="numerino"></p>
+          <p class="titoli-categorie">Renewable energy <br>is solar panels and <br>wind turbines</p>
+          <div id="energy" class="box-img" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+        </div>
+        <div class="box-categorie" id="boxCat10">
+          <p class="numerino"></p>
+          <p class="titoli-categorie">Sustainability <br>is dealing <br>with plants</p>
+          <div id="planet" class="box-img" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+        </div>
+        <div class="box-categorie" id="boxCat11">
+          <p class="numerino"></p>
+          <p class="titoli-categorie">Reduce + reuse <br>+ recycle = <br>masses of stuff</p>
+          <div id="reuse" class="box-img" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+        </div>
+        <div class="box-categorie" id="boxCat12">
+          <p class="numerino"></p>
+          <p class="titoli-categorie">Zero emissions is <br>cars and bicycles</p>
+          <div id="waste" class="box-img" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+        </div>
+      </div>
+      <div class="righe"></div>
+      <div class="boxBias" id="boxBias5" onclick="ap(this)">
+        <p class="numerinoGrande">(05)</p>
+        <p class="titoli-big" id="titoli-big5" onmouseover="overGif5()" onmouseout="noOverGif5()">Climate patchwork</p>
+        <p class="titoli-small" id="titoli-small5"><b>Focus:</b>&nbsp coherence between figure and background <br></p>
+
+        <div class="box-categorie" id="boxCat13">
+          <p class="numerino"></p>
+          <p class="titoli-categorie">Lack of <br>contextualization</p>
+          <div id="mix" class="box-img" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+        </div>
+        <div class="box-categorie" id="boxCat14">
+          <p class="numerino"></p>
+          <p class="titoli-categorie">Awkward actions<br>for the situation</p>
+          <div id="pairs" class="box-img" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+        </div>
+      </div>
+      <div class="righe"></div>
+      <div class="boxBias" id="boxBias6" onclick="ap(this)">
+        <p class="numerinoGrande">(06)</p>
+        <p class="titoli-big" id="titoli-big6" onmouseover="overGif6()" onmouseout="noOverGif6()">Scripts before pics</p>
+        <p class="titoli-small" id="titoli-small6"><b>Focus:</b>&nbsp frequency and kinds of generated texts </p>
+
+        <div class="box-categorie" id="boxCat15">
+          <p class="numerino"></p>
+          <p class="titoli-categorie">Signs are<br>everywhere</p>
+          <div id="signs" class="box-img" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+        </div>
+        <div class="box-categorie" id="boxCat16">
+          <p class="numerino"></p>
+          <p class="titoli-categorie">Repetition of <br> infographics</p>
+          <div id="infographics" class="box-img" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+        </div>
+        <div class="box-categorie" id="boxCat17">
+          <p class="numerino"></p>
+          <p class="titoli-categorie">Overuse of text</p>
+          <div id="texts" class="box-img" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+        </div>
+      </div>
+      <div class="righe"></div>
+      <div class="boxBias" id="boxBias7" onclick="ap(this)">
+        <p class="numerinoGrande">(07)</p>
+        <p class="titoli-big" id="titoli-big7" onmouseover="overGif7()" onmouseout="noOverGif7()">Down to earth</p>
+        <p class="titoli-small" id="titoli-small7"><b>Focus:</b>&nbsp presence of planet earth images <br></p>
+
+        <div class="box-categorie" id="boxCat18">
+          <p class="numerino"></p>
+          <p class="titoli-categorie">Planet earth <br>everywhere</p>
+          <div id="face" class="box-img" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+        </div>
+      </div>
+      <div class="righe"></div>
+      <div class="boxBias" id="boxBias8" onclick="ap(this)">
+        <p class="numerinoGrande">(08)</p>
+        <p class="titoli-big" id="titoli-big8" onmouseover="overGif8()" onmouseout="noOverGif8()">Nonsense out of hand</p>
+        <p class="titoli-small" id="titoli-small8"><b>Focus:</b>&nbsp generation of random and weird items <br></p>
+
+        <div class="box-categorie" id="boxCat19">
+          <p class="numerino"></p>
+          <p class="titoli-categorie">Weird images</p>
+          <div id="Nosense" class="box-img" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ******************* Utilities ******************* -->
+  <!-- Javascript libraries -->
+  <!-- d3.js -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- jQuery and Popper. They are required by Bootstrap, we discourage using jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+  <!-- Your js file -->
+  <script src="../scripts/catalogo.js"></script>
+
+
+</body>
+
+</html>

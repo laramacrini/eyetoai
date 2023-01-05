@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="../styles/about.css">
+
+  <title>EYE to AI - about</title>
+</head>
+
+<body>
+
+
+
+  <div class="menu">
+    <div class="sx" id="sx"> </div>
+    <div class="logo" id="logo"><a href="../index.html" id="home"><h1 class="title">EYE to AI</h1></a></div>
+    <div class="dx" id="dx"> </div>
+  </div>
+
+<section id="title">
+  <h1 class="txt_base" id="txt_1">
+    Eye to AI brings to light the <span class="bold-it">biases and stereotypes</span> on climate change that <span class="bold-it">txt-to-img Ai inherits from society.</span> It uses the <span class="bold-it">machine</span>
+    itself as a tool to <span class="bold-it">expose its inherent issues.</span>
+  </h1>
+</section>
+
+<main>
+
+
+<div class="navBar">
+  <li id="uno"> PREMISES </li>
+  <li id="due"> TXT-TO-IMG AI </li>
+  <li id="tre"> PROCESS </li>
+  <li id="quattro"> DESIGN CHOICES </li>
+  <li id="cinque"> THE TEAM </li>
+</div>
+
+<div class="section_container">
+<section id="first">
+    <h2 class="section_title"> Premises </h2>
+    <div class="para">
+        <img src="../assets/svg/freccia_nera.svg" class="freccia">
+        <p> The future has arrived: text to image Ai is here, <span class="bold">we can now generate images from simple text descriptions.</span>
+            Tools like <a href="https://openai.com/dall-e-2/" target="_blank">Dall-e</a> and <a href="https://stability.ai/blog/stable-diffusion-public-release" target="_blank">Stable Diffusion</a> are rapidly spreading and growing consensus among millions of users.
+            But behind the facade of a simple and fun technology <span class="bold">there are some significant ethical concerns that aren’t known to the public.</span>
+            These technologies are believed to be neutral and objective, but actually they act as <span class="bold">amplifiers of social and cultural issues.</span>
+            <br> <br>
+            <span class="bold">Eye to AI</span> is a project that <span class="bold">merges the wider debate on the myth of neutrality in technology to the urgent theme of climate change.</span>
+            It is important to note that it was conducted on a sample of images which could potentially expand infinitely. Also, we we believe
+            <span class="bold">the same approach could be expanded across other topics</span> who deal with identifying the main issues revolving around society through
+            the eye of an Ai. This research project is part of the 2022-2023 Final Synthesis Design Studio at Politecnico di Milano, MA in Communication Design.
+       </p>
+    </div>
+</section>
+
+<section id="second">
+    <h2 class="section_title"> Txt-to-<br>img Ai </h2>
+    <div class="para">
+        <img src="../assets/svg/freccia_nera.svg" class="freccia">
+        <p> Ai generated images are the focus and starting point of the project.
+            In order to understand why, you need to get a rough idea of how text to image Ai works.
+       </p>
+       <img src="..\assets\about_imgs\graph-01.svg" class="graph">
+
+       <p>
+         Being the output the last step of the process, it means that <span class="bold">by analysing Ai generated images we can get insights of both
+         the training set that was used to build the model, and the elaboration that goes on inside the “black box”</span>, making them particularly
+         useful for our purpose: reading biases in climate change imagery.
+       </p>
+    </div>
+</section>
+
+<section id="third">
+    <h2 class="section_title"> Process </h2>
+    <div class="para">
+        <img src="../assets/svg/freccia_nera.svg" class="freccia">
+        <p> For the whole project we used <span class="bold"><a href="https://huggingface.co/spaces/stabilityai/stable-diffusion" target="_blank">Stable Diffusion</a></span>, an open source Ai that, unlike other systems, has no limits in the amount of generable images.
+          To make the process faster we used <span class="bold"><a href="https://github.com/TheLastBen/fast-stable-diffusion" target="_blank">AUTOMATIC111</a></span>, a <span class="bold">Google Colab</span> that allows to generate a batch of images from a single prompt.
+          Prompts are fundamental: they represent the instructions you give the machine in order to get the desired image. <span class="bold">To build a consistent
+          dataset of climate change imagery we created a prompt map whose goal was to range among climate change related topics.</span>
+          We started from defining 4 main sub-topics related to climate change, from these we derived 25 prompts. Each prompt was used to generate 20 images,
+          making a total of 500 images. As the aim of the project is focused on society biases, we tested prompts that were able to generate people in
+          their outputs, which was not easy. For this reason the amount of prompts is not distributed equally among the sub-topics: it varies depending on
+          how meaningful it was in terms of people-generation
+       </p>
+
+       <img src="..\assets\about_imgs\graph-02.svg" class="graph">
+
+       <p>
+         Once the dataset was ready we proceeded with the actual analysis. Following the protocol below we started with keeping the high level
+         organization of the images aligned to the sub-topics used for the prompt generation: general topic, impacts on people, daily solutions,
+         worsening issues. Afterwards we started to look for patterns and biases, this step was performed manually. This observation led us to
+         define clusters of biases and sub-biases. The following scheme displays an example of the process:
+       </p>
+
+        <img src="..\assets\about_imgs\graph-03.svg" class="graph">
+
+        <p>
+          We ended up with 8 main biases and from these we derived 18 more sub-biases, more specific on different aspects.
+          These observations refer to the subjects noted during the analysis.
+        </p>
+
+        <img src="..\assets\about_imgs\graph-04.svg" class="graph">
+
+        <p>
+          <span class="bold">Some of the identified biases and stereotypes</span> are striking, such “white people as heroes”, others are less evident,
+          such as “groups stand doing nothing”. In displaying these results to the user we had <span class="bold">two necessities</span>: be clear on the
+          observations and use a language that could catch the reader’s attention easily. In order to achieve both results <span class="bold">we adopted
+          a mixed strategy</span>: the main biases are expressed through <span class="bold">catchy sentences</span>, whereas the specific
+          <span class="bold">sub-biases are more descriptive</span> of the issue involved.
+        </p>
+
+    </div>
+</section>
+
+<section id="fourth">
+    <h2 class="section_title"> Design choices </h2>
+    <div class="para">
+        <img src="../assets/svg/freccia_nera.svg" class="freccia">
+        <p>
+          During the analysis process it emerged that the <span class="bold">information to be conveyed</span> through the website concerned
+          two areas: <span class="bold">prompts and biases</span>. In order to display both of them clearly we organized the exploration of the website
+          in a way that is both structurally and visually capable of displaying those kinds of information in an effective way.
+       </p>
+
+       <div class="imgs_container">
+         <div class="img_sx">
+           <img src="..\assets\about_imgs\graph-05.png" class="graph-2">
+           <p class="didascalia"> [ BIAS CATALOGUE interface ] </p>
+         </div>
+
+         <div class="img_dx">
+           <img src="..\assets\about_imgs\graph-06.png" class="graph-2">
+           <p class="didascalia"> [ PROMPT EXPLORER interface ] </p>
+         </div>
+
+       </div>
+
+
+       <p>
+         The first section is the <span class="bold">BIAS CATALOGUE</span>. It was designed with the intention of <span class="bold">displaying all the biases at the same time</span>
+         in order to give the user an overview on the contents as well as show the distinction between the identified patterns.
+         When entering each bias the possible interactions are a horizontal scroll through the images and a zoom interaction.
+         The scroll express the insisting <span class="bold">repetition of the dataset</span>; the zoom allows a <span class="bold">multiple point of view on the images</span>:
+         seeing them all together from far away helps with showing the <span class="bold">consistency of the bias</span>; looking at them closely reveals
+         some <span class="bold">details that are fundamental in understanding the biases.</span>
+       </p>
+
+       <video src="..\assets\about_imgs\catalogue.m4v" class="graph" autoplay muted loop></video>
+
+       <p>
+         In some cases it was also important to <span class="bold">underline the relationship between subject and context within each image</span>,
+         when this occurred we treated the image as a gif and the different elements that composed it were isolated.
+       </p>
+
+       <div class="imgs_container">
+           <img src="..\assets\catalogo_imgs\normale\00022-514130596-people-affected-by-droughts.gif" class="graph-2">
+           <img src="..\assets\catalogo_imgs\normale\00021-3280865218-People-affected-by-floodings.gif" class="graph-2">
+           <img src="..\assets\catalogo_imgs\normale\00013-3127923203-people-affected-by-wildfires.gif" class="graph-2">
+       </div>
+
+       <p>
+         The second one is the <span class="bold">PROMPT EXPLORER</span>: it shows all the images together and emphasizes the
+         <span class="bold">relationship between original prompt and observed biases</span>
+         by making clear how they are distributed in the overall dataset. This correlation is particularly relevant
+         as some specific prompts are the main origin of some biases. A striking example is about ethnicities: whenever the prompt is
+         about people suffering from climate change effects it is mainly black or asian people that are generated. In order to express
+         this correlation we opted for an explorative tool that allows to zoom and pan around the space and in which filters can
+         be used to exclude some images.
+       </p>
+
+       <video src="..\assets\about_imgs\atlas.m4v" class="graph" autoplay muted loop></video>
+
+    </div>
+</section>
+
+<section id="fifth">
+    <h2 class="section_title"> The Team </h2>
+    <div class="para">
+        <img src="../assets/svg/freccia_nera.svg" class="freccia">
+
+        <div class="team_container">
+          <!-- <img src="..\assets\about_imgs\team-01.png" class="team">
+          <img src="..\assets\about_imgs\team-01.png" class="team">
+          <img src="..\assets\about_imgs\team-01.png" class="team">
+          <img src="..\assets\about_imgs\team-01.png" class="team">
+          <img src="..\assets\about_imgs\team-01.png" class="team">
+          <img src="..\assets\about_imgs\team-01.png" class="team">
+          <img src="..\assets\about_imgs\team-01.png" class="team"> -->
+
+          <div class="team">
+            <img src="..\assets\about_imgs\ANNA.png" class="team_img">
+            <p class="didascalia"> [ Anna Cattaneo ] </p>
+          </div>
+          <div class="team">
+            <img src="..\assets\about_imgs\YIYUAN.png" class="team_img">
+            <p class="didascalia"> [ Yiyuan Hu ] </p>
+          </div>
+          <div class="team">
+            <img src="..\assets\about_imgs\LARA.png" class="team_img">
+            <p class="didascalia"> [ Lara Macrini ] </p>
+          </div>
+          <div class="team">
+            <img src="..\assets\about_imgs\NICOLE.png" class="team_img">
+            <p class="didascalia"> [ Nicole Moreschi ] </p>
+          </div>
+          <div class="team">
+            <img src="..\assets\about_imgs\LEO.png" class="team_img">
+            <p class="didascalia"> [ Leonardo Puca ] </p>
+          </div>
+          <div class="team">
+            <img src="..\assets\about_imgs\SGHIWI.png" class="team_img">
+            <p class="didascalia"> [ Silvia Sghirinzetti ] </p>
+          </div>
+          <div class="team">
+            <img src="..\assets\about_imgs\CE.png" class="team_img">
+            <p class="didascalia"> [ Ce Zheng ] </p>
+          </div>
+        </div>
+
+    </div>
+</section>
+
+
+</div>
+
+</main>
+
+<footer>
+  <div id="footer_sx">
+    <div id="title_course">
+      <h1 class="title_course"> Final Synthesis Design Studio <br> sect. C3 </h1>
+      <h1 class="title_course"> LM in Communication Design <br> A.A. 2022/2023 </h1>
+    </div>
+    <div id="loghi">
+      <img src="..\assets\svg\Logo_DensityDesign.svg">
+      <img src="..\assets\svg\Logo_Polimi.svg">
+    </div>
+  </div>
+
+  <div id="footer_dx">
+    <div id="students">
+      <h1 class="title_footer"> Authors </h1>
+      <h2 class="li_footer"> Anna Cattaneo </h2>
+      <h2 class="li_footer"> Yiyuan Hu </h2>
+      <h2 class="li_footer"> Lara Macrini </h2>
+      <h2 class="li_footer"> Nicole Moreschi </h2>
+      <h2 class="li_footer"> Leonardo Puca </h2>
+      <h2 class="li_footer"> Silvia Sghirinzetti </h2>
+      <h2 class="li_footer"> Ce Zheng </h2>
+    </div>
+
+    <div id="faculty">
+      <h1 class="title_footer"> Faculty </h1>
+      <h2 class="li_footer"> Michele Mauri </h2>
+      <h2 class="li_footer"> Angeles Briones </h2>
+      <h2 class="li_footer"> Gabriele Colombo </h2>
+      <h2 class="li_footer"> Simone Vantini </h2>
+      <h2 class="li_footer"> Salvatore Zingale </h2>
+    </div>
+
+    <div id="Assistants">
+      <h1 class="title_footer"> Teaching assistants </h1>
+      <h2 class="li_footer"> Elena Aversa </h2>
+      <h2 class="li_footer"> Andrea Benedetti </h2>
+      <h2 class="li_footer"> Tommaso Elli </h2>
+      <h2 class="li_footer"> Beatrice Gobbo </h2>
+    </div>
+
+</footer>
+
+
+
+
+
+  <!-- ******************* Utilities ******************* -->
+  <!-- Javascript libraries -->
+  <!-- d3.js -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- jQuery and Popper. They are required by Bootstrap, we discourage using jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+  <!-- Your js file -->
+  <script src="/scripts/about.js"></script>
+  <!-- <script src="jquery.js"></script> -->
+
+</body>
+
+</html>
